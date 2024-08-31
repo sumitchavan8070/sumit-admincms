@@ -115,7 +115,7 @@ function Default() {
           </Grid>
         </Grid>
       </ArgonBox>
-      <Footer />
+      {/* <Footer /> */}
     </DashboardLayout>
   );
 }

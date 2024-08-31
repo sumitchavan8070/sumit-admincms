@@ -27,7 +27,7 @@ import ArgonButton from "components/ArgonButton";
 // Argon Dashboard 2 MUI contexts
 import { useArgonController } from "context";
 
-function Bill({ name, company, email, vat, noGutter }) {
+function Bill({ name, company, email, vat, noGutter, onEdit, onDelete  }) {
   const [controller] = useArgonController();
   const { darkMode } = controller;
 
@@ -64,13 +64,19 @@ function Bill({ name, company, email, vat, noGutter }) {
             ml={{ xs: -1.5, sm: 0 }}
           >
             <ArgonBox mr={1}>
-              <ArgonButton variant="text" color="error">
+              <ArgonButton variant="text" color="error" onClick={onDelete}>
                 <Icon>delete</Icon>&nbsp;Delete
               </ArgonButton>
             </ArgonBox>
-            <ArgonButton variant="text" color="dark">
+          <ArgonBox mr={1}>
+            <ArgonButton
+              variant="text"
+              color="primary"
+              onClick={onEdit}
+            >
               <Icon>edit</Icon>&nbsp;Edit
             </ArgonButton>
+          </ArgonBox>
           </ArgonBox>
         </ArgonBox>
         <ArgonBox mb={1} lineHeight={0}>

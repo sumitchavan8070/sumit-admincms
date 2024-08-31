@@ -28,6 +28,8 @@ import RTL from "layouts/rtl";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
+import Categories from "layouts/Categories/categories"
+
 
 // Argon Dashboard 2 MUI components
 import ArgonBox from "components/ArgonBox";
@@ -60,14 +62,14 @@ const routes = [
     icon: <ArgonBox component="i" color="success" fontSize="14px" className="ni ni-credit-card" />,
     component: <Billing />,
   },
-  // {
-  //   type: "route",
-  //   name: "Virtual Reality",
-  //   key: "virtual-reality",
-  //   route: "/virtual-reality",
-  //   icon: <ArgonBox component="i" color="info" fontSize="14px" className="ni ni-app" />,
-  //   component: <VirtualReality />,
-  // },
+  {
+    type: "route",
+    name: "Categories",
+    key: "Categories",
+    route: "/virtual-reality",
+    icon: <ArgonBox component="i" color="info" fontSize="14px" className="ni ni-app" />,
+    component: <Categories />,
+  },
 
   
   // {
