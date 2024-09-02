@@ -299,7 +299,19 @@ const authorsTableData = {
   ],
 
   rows: users.map((user) => ({
-    author: <Author image={user.profilePic} name={user.name} email={user.email} />,
+    author: <ArgonBox display="flex" alignItems="center" px={1} py={0.5}>
+    <ArgonBox mr={2}>
+      <ArgonAvatar src={user.profilePic} alt={user.name} size="sm" variant="rounded" />
+    </ArgonBox>
+    <ArgonBox display="flex" flexDirection="column">
+      <ArgonTypography variant="button" fontWeight="medium">
+        {user.name}
+      </ArgonTypography>
+      <ArgonTypography variant="caption" color="secondary">
+        {user.email}
+      </ArgonTypography>
+    </ArgonBox>
+  </ArgonBox>, 
     // name: (
     //   <ArgonBox display="flex" alignItems="center" px={1} py={0.5}>
     //     <ArgonBox mr={2}>

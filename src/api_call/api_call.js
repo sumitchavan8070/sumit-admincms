@@ -9,6 +9,7 @@
     // Define other static properties using the base URL
     static home = '/';
     static getAllCategories = `${RoutePaths.baseUrl}getall-cat`;
+    static getAllStudents = `${RoutePaths.baseUrl}get-all-students`;
     static getPosts = `${RoutePaths.baseUrl}posts`;
     static createPost = `${RoutePaths.baseUrl}posts/create`;
     static updatePost = `${RoutePaths.baseUrl}posts/update`;

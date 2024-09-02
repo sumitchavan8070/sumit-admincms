@@ -81,7 +81,7 @@ function Bill({ name, company, email, vat, noGutter, onEdit, onDelete  }) {
         </ArgonBox>
         <ArgonBox mb={1} lineHeight={0}>
           <ArgonTypography variant="caption" color="text">
-            Company Name:&nbsp;&nbsp;&nbsp;
+          Categori Name:&nbsp;&nbsp;&nbsp;
             <ArgonTypography variant="caption" fontWeight="medium" textTransform="capitalize">
               {company}
             </ArgonTypography>
@@ -89,16 +89,16 @@ function Bill({ name, company, email, vat, noGutter, onEdit, onDelete  }) {
         </ArgonBox>
         <ArgonBox mb={1} lineHeight={0}>
           <ArgonTypography variant="caption" color="text">
-            Email Address:&nbsp;&nbsp;&nbsp;
+          Description:&nbsp;&nbsp;&nbsp;
             <ArgonTypography variant="caption" fontWeight="medium">
-              {email}
+              {vat}
             </ArgonTypography>
           </ArgonTypography>
         </ArgonBox>
         <ArgonTypography variant="caption" color="text">
-          VAT Number:&nbsp;&nbsp;&nbsp;
+        Email Address:&nbsp;&nbsp;&nbsp;
           <ArgonTypography variant="caption" fontWeight="medium">
-            {vat}
+            {email}
           </ArgonTypography>
         </ArgonTypography>
       </ArgonBox>
